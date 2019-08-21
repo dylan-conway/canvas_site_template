@@ -1,4 +1,5 @@
 import App from './App';
+import Mixer from './Mixer';
 
 window.onload = () => init();
 
@@ -15,7 +16,8 @@ const init = () => {
 
   container.appendChild(canvas);
 
-  const app = new App(canvas);
+  const mixer = new Mixer();
+  const app = new App(canvas, mixer);
 
   app.render(ctx);
 }

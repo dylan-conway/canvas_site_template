@@ -1,7 +1,8 @@
+import Component from './Component';
 
-export class Page {
-  constructor() {
-    name = 'sample_page';
+export class Page extends Component {
+  constructor(mixer) {
+    super('sample_page', mixer);
   }
 
   render(ctx, width, height) {
