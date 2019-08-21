@@ -1,0 +1,27 @@
+{
+  "name": "canvas_site_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "www/public/index.html",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "npm-run-all --parallel watch:build watch:server",
+    "watch:build": "webpack --watch",
+    "watch:server": "nodemon server/main.js --watch",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "nodemon": "^1.19.1",
+    "npm-run-all": "^4.1.5",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
